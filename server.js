@@ -10,7 +10,9 @@ const fs = require('fs');
 const path = require('path');
 const url = require('url');
 
-const PORT = 3000;
+// server.js
+const PORT = process.env.PORT ;
+
 
 // ─── MIME TYPES ──────────────────────────────────────────────────────────────
 const MIME = {
