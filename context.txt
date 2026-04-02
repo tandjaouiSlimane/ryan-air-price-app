@@ -1,0 +1,11 @@
+J’ai créé cette application après avoir constaté qu’il était difficile de trouver rapidement les vols les moins chers sur le site Ryanair, surtout lorsqu’on est flexible sur la destination.  
+
+Souvent, on souhaite simplement voyager au prix le plus bas possible, sans avoir d’idée précise de la destination. Cependant, le site Ryanair ne propose pas une vue globale permettant de comparer facilement les destinations en fonction du prix, ni de visualiser clairement les périodes les plus économiques sur plusieurs mois.
+
+L’objectif de cette application est donc de proposer une interface simple, proche d’un tableau de bord, permettant :
+* d’identifier rapidement les destinations les moins chères depuis un aéroport donné
+* de comparer les prix selon les mois
+* de visualiser les jours les plus économiques grâce à un calendrier interactif
+* d’optimiser le choix des dates pour réduire le coût du voyage
+
+Cette application me permet également de planifier plus facilement mes futurs voyages lorsque la priorité est de trouver une opportunité intéressante, plutôt qu’une destination spécifique.
