@@ -126,7 +126,30 @@ const server = http.createServer((req, res) => {
     const apiPath = pathname.replace('/api/ryanair', '');
     return proxyRyanair(apiPath, querystring, res);
   }
+  // ── ROBOTS.TXT / SITEMAP.XML ─────────────────────────────────────────────
+  if (pathname === '/robots.txt') {
+    fs.readFile(path.join(__dirname, 'robots.txt'), (err, data) => {
+      if (err) {
+        res.writeHead(404, { 'Content-Type': 'text/plain' });
+        return res.end('404 Not Found');
+      }
+      res.writeHead(200, { 'Content-Type': 'text/plain' });
+      res.end(data);
+    });
+    return;
+  }
 
+  if (pathname === '/sitemap.xml') {
+    fs.readFile(path.join(__dirname, 'sitemap.xml'), (err, data) => {
+      if (err) {
+        res.writeHead(404, { 'Content-Type': 'text/plain' });
+        return res.end('404 Not Found');
+      }
+      res.writeHead(200, { 'Content-Type': 'application/xml' });
+      res.end(data);
+    });
+    return;
+  }
   // ── STATIC FILES ─────────────────────────────────────────────────────────
   let filePath;
   if (pathname === '/' || pathname === '/index.html') {

@@ -1,0 +1,10 @@
+# Autoriser tous les robots à indexer le site
+User-agent: *
+Disallow: /api/
+
+# Exclure un dossier privé
+Disallow: /admin
+Disallow: /config
+
+# Indiquer le sitemap
+Sitemap: https://ryan-air-price-app.onrender.com/sitemap.xml
